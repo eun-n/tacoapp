@@ -1,12 +1,15 @@
 {
   "development": {
-    "database": "nodetest",
+    "database": "projectdb",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "projectdb",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "database": "nodetest",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "use_env_variable": "DATABASE_URL"
   }
 }
